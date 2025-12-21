@@ -67,6 +67,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
     /* function     format          argument */
   { run_command, " td: %s ", "cat /home/evan/org/TODO/todo.org | grep \"** TODO\" | wc -l"},
+	{ run_command, " %s ", "bluetoothctl info 84:D3:52:C5:B5:2C | grep -q \"Connected: yes\" && echo \"C\" || echo \"D\""},
     { wifi_essid,   " %s ", "wlp5s0" }, /* remplace wlan0 par ton interface wifi */
     { ipv4,         " %s ",   "wlp5s0" }, /* ou l'interface ethernet ex: eth0 */
     { run_command,  " vol: %s%% ", "pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\\d+(?=%)' | head -n 1" },
