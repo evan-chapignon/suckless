@@ -78,7 +78,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_main, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "firefox-bin", NULL };
 static const char *emacsclientcmd[] = { "emacsclient", "-c", NULL };
 
@@ -92,6 +92,8 @@ static const Key keys[] = {
 	SHCMD("bluetoothctl connect 84:D3:52:C5:B5:2C") },
   { MODKEY|ShiftMask,             XK_a,      spawn,
 	SHCMD("flameshot gui") },
+  { MODKEY,                       XK_x,      spawn,
+	SHCMD("surf html.duckduckgo.com")},
   { MODKEY,                       XK_m,      togglebar,      {0} },
   { MODKEY,                       XK_f,      focusstack,     {.i = +1 } },
   { MODKEY,                       XK_b,      focusstack,     {.i = -1 } },

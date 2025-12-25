@@ -1,1 +1,1 @@
-((nil . ((compile-command . "sudo make clean install"))))
+sudo make clean install
