@@ -1,0 +1,25 @@
+* Ma configuration [[https://suckless.org/][suckless]]
+
+** Introduction
+
+J'ai profité des vacances d'hiver pour expérimenter la philosophie
+suckless dans mon envirronement de travail. Cela va du gestionnaire de
+fenêtre au terminal, en passant par le navigateur internet. Tout ceci
+me permet de :
+
+- Travailler ma compréhension du langage C
+- Décider de ce que je veux *ou non* dans mon envirronement de travail
+- Passer le temps
+- Découvrir des outils intéressants
+
+** Contenu
+
+Vous trouverez dans ce repo git les dossiers suivants :
+
+- dwm : dynamic window manager, mon gestionnaire de fenêtre.
+- slstatus : directement lié à dwm, c'est ma barre d'informations.
+- st : simple terminal, mon terminal assez simple, nécessitant peu de configuration
+- surf : mon navigateur web, utile tout du moins pour ouvrir des
+  fichiers html locaux de manière plus esthétique que mon habituel eww.
+- slock : mon screen locker, pour... vérouiller mon écran.
+ 
